@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+
+# Data files - EXCLUDE ALL IMAGES first
+*.rar
+*.zip
+*.tar.gz
+*.BMP
+*.bmp
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+
+# Then INCLUDE only training result images
+!HuSHem/outputs/confusion_matrices.png
+!HuSHem/outputs/model_comparison_barplot.png
+!HuSHem/outputs/model_comparison_boxplot.png
+!HuSHem/outputs/sample_images.png
+!HuSHem/outputs/training_history.png
+!HuSHem/outputs/ensemble_results/ensemble_confusion_matrix.png
+!HuSHem/outputs/ensemble_results/ensemble_training_history.png
+!HuSHem/outputs/ensemble_results/ensemble_vs_individual_barplot.png
+
+# Dataset directories (too large for git)
+HuSHem/01_Normal/
+HuSHem/02_Tapered/
+HuSHem/03_Pyriform/
+HuSHem/04_Amorphous/
+HuSHem/*.rar
+
+# Model checkpoints (too large)
+**/saved_models/*.pth
+**/ensemble_results/*.pth
+
+# Large pickle files
+**/individual_models_results.pkl
+**/ensemble_results.pkl
+
+# Exclude annotation tools (keep only the main one)
+HuSHem/annotate_batch.py
+HuSHem/annotate_cli.py
+HuSHem/auto_annotate.py
+HuSHem/check_rotations.py
+HuSHem/correct_annotations_interactive.py
+HuSHem/create_annotation_tool.py
+HuSHem/01_train_individual_models_modify.ipynb
+
+# Exclude debug/preview images
+HuSHem/outputs/preview/
+HuSHem/outputs/auto_aligned_review_*.png
+HuSHem/outputs/alignment_test.png
+HuSHem/outputs/crop_debug.png
+HuSHem/outputs/rotation_options.png
+HuSHem/outputs/EXPLANATION_head_direction.png
+HuSHem/outputs/cell9_reproduction.png
+
+# Exclude backup files
+*_backup.json
+
+# PDF papers (large files)
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
