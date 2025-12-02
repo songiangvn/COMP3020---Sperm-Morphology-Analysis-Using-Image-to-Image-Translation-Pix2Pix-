@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+      Normal     0.9172    0.9568    0.9366       162
+     Tapered     0.8824    0.8491    0.8654       159
+    Pyriform     0.8621    0.8772    0.8696       171
+   Amorphous     0.9276    0.9038    0.9156       156
+
+    accuracy                         0.8966       648
+   macro avg     0.8973    0.8967    0.8968       648
+weighted avg     0.8966    0.8966    0.8964       648

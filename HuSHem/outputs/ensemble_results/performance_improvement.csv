@@ -1,0 +1,2 @@
+best_individual_model,best_individual_accuracy,ensemble_accuracy,absolute_improvement,relative_improvement_pct
+RESNET34,91.80761099365752,92.42776603241718,0.6201550387596626,0.6754941469967077
